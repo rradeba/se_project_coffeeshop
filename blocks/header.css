@@ -54,13 +54,6 @@
   z-index: 0;
 }
 
-.header__paragraph_wrapper{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: end;
-}
-
 .header__paragraph {
   font-family: 'Inter' Arial, Helvetica, sans-serif;
   font-style: normal;
