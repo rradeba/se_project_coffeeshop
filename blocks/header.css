@@ -14,7 +14,7 @@
 
 .header__span-accent {
   color: #2f80ed;
-  font-family: Noto Serif;
+  font-family: 'Noto Serif' Arial, Helvetica, sans-serif;
   font-style: italic;
   font-weight: 500;
   font-size: 60px;
@@ -23,13 +23,15 @@
 }
 
 .header__title {
-  font-family: "Inter";
+  font-family: 'Inter' Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 60px;
   line-height: 72px;
   list-style-type: none;
   margin: 0 0 28px 0px;
+  max-width: 729px; 
+  margin-top: 202px
 }
 
 .header__description {
@@ -52,19 +54,22 @@
   z-index: 0;
 }
 
-.header__paragraph {
-  position: relative; 
+.header__paragraph_wrapper{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: end;
-  top: 200px;
-  font-family: Inter;
+}
+
+.header__paragraph {
+  font-family: 'Inter' Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   list-style: none;
   color: #6f6f6f;
+  position: relative; 
+  top: 180px;
 }
 

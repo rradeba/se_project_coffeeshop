@@ -1,15 +1,14 @@
 .about {
   background-color: #0a2750;
   color: #ffffff;
-  padding: 0px 80px 173px 0px;
   position: relative;
   overflow: hidden;
-  padding: 100px 80px 173px 80px;
+  padding: 100px 80px 228px 80px; 
 }
 
 .about__title {
   position: relative;
-  font-family: Inter;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 44px;
@@ -19,22 +18,26 @@
 }
 
 .about__content {
-  font-family: Noto Serif;
+  font-family: 'Noto Serif', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  
+  position: absolute ;
+  top: 119px;
+  right: 80px; 
+  bottom: 0px; 
+  z-index: 2;
 }
 
 .about__paragraph {
   margin: 0 0 20px 0;
-  z-index: 2;
   max-width: 660px;
 }
+
+.about__paragraph:last-child {
+  margin: 0;
+} 
 
 .about__circle {
   position: absolute;
@@ -48,13 +51,6 @@
 }
 
 .about__circle_animation_blurred {
-  list-style: none;
-  color: #6f6f6f;
-  height: 426px;
-  width: 426px;
-  background-color: #2f80ed;
-  border-radius: 50%;
-  z-index: 0;
   animation-name: pulsation;
   animation-duration: 1.3s;
   animation-delay: 0s;
@@ -70,19 +66,8 @@
   }
   100% {
     opacity: 0;
-  }
-}
-
-
-@keyframes pulsation {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 0;
     transform: scale(1.5);
   }
 }
+
+
