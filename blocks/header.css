@@ -14,7 +14,7 @@
 
 .header__span-accent {
   color: #2f80ed;
-  font-family: 'Noto Serif' Arial, Helvetica, sans-serif;
+  font-family: Noto Serif, Arial, Helvetica, sans-serif;
   font-style: italic;
   font-weight: 500;
   font-size: 60px;
@@ -64,5 +64,11 @@
   color: #6f6f6f;
   position: relative; 
   top: 180px;
+}
+
+.header__paragraph_end{
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
 }
 
