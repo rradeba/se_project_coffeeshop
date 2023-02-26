@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta name="description" content="Wesbiste for Practicum Coffee Shop" />
-  <meta name="keywords" content="coffee, espresso, practicum" />
-  <meta name="author" content="Reid Radebaugh" />
+    <meta name="keywords" content="coffee, espresso, practicum" />
+    <meta name="author" content="Reid Radebaugh" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Practicum Coffee Shop</title>
@@ -42,7 +42,7 @@
           </ul>
         </nav>
         <h1 class="header__title">
-          <span class="header__span-accent">Specialty coffee</span><br>
+          <span class="header__span-accent">Specialty coffee</span><br />
           in the Practicum Library
         </h1>
         <div class="header__description">
@@ -54,17 +54,15 @@
           alt="Inside Shop"
           class="header__image"
         />
-          <div>
-            <div class="header__paragraph">Hours:</div>
-            <div class="header__paragraph">
-              Monday – Friday (10:00 – 19:00)
-            </div>
-            <div class="header__paragraph">
-              <div class="header__end">
+        <div>
+          <div class="header__paragraph">Hours:</div>
+          <div class="header__paragraph">Monday – Friday (10:00 – 19:00)</div>
+          <div class="header__paragraph">
+            <div class="header__end">
               <div>Saturday – Sunday (11:00 – 18:00)</div>
-            <div>200 Success Avenue, The Town of Practicum</div>
+              <div>200 Success Avenue, The Town of Practicum</div>
             </div>
-            </div>
+          </div>
         </div>
       </header>
 
@@ -94,7 +92,7 @@
               <div class="card__list-item">
                 Iced Coffee (16 oz)<span class="card__list-divider"></span>$1.25
               </div>
-              </div>
+            </div>
             <div class="card">
               <h3 class="card__title">Espresso</h3>
               <div class="card__list-item">
@@ -115,7 +113,9 @@
               </div>
               <div class="card__list-item">
                 Sunrise in the Bay Area (decaf)<span
-                  class="card__list-divider"></span>$10
+                  class="card__list-divider"
+                ></span
+                >$10
               </div>
             </div>
             <div class="card">
@@ -149,25 +149,27 @@
             convenience:
           </div>
           <div class="recipes__videos">
-            <div> <iframe class="recipes__iframe"
-              src="https://www.youtube.com/embed/w3A_Z1J78HY "
-              title="How to Make a French Press"
-          ></iframe>
-            <div class="recipes__video-caption">
-              <div>Aeropress Recipe</div>
-              <div>~5 min</div>
-            </div></div>
-           <div>  <iframe class="recipes__iframe"
-            src="https://www.youtube.com/embed/kqbw6bVB01I"
-            title="How to Make an Americano"
-        ></iframe>
-          <div class="recipes__video-caption">
             <div>
-              French Press Recipe
+              <iframe
+                class="recipes__iframe"
+                src="https://www.youtube.com/embed/w3A_Z1J78HY "
+                title="How to Make a French Press"
+              ></iframe>
+              <div class="recipes__video-caption">
+                <div>Aeropress Recipe</div>
+                <div>~5 min</div>
+              </div>
             </div>
-            <div>~8 min</div>
-          </div></div>
-          
+            <div>
+              <iframe
+                class="recipes__iframe"
+                src="https://www.youtube.com/embed/kqbw6bVB01I"
+                title="How to Make an Americano"
+              ></iframe>
+              <div class="recipes__video-caption">
+                <div>French Press Recipe</div>
+                <div>~8 min</div>
+              </div>
             </div>
           </div>
         </section>
@@ -175,94 +177,94 @@
         <section class="reservation" id="reservation">
           <div class="reservation__title">Book a table</div>
           <form class="form reservation__form">
-              <label class="form__label" for="form__input_name"> name * </label>
+            <label class="form__label" for="form__input_name"> name * </label>
+            <input
+              type="text"
+              class="form__input"
+              placeholder="Name surname"
+              name="form__input_name"
+              id="form__input_name"
+              required
+            />
+            <label class="form__label" for="form__input_guest-number">
+              Number of Guests*
+            </label>
+            <input
+              type="number"
+              class="form__input"
+              placeholder="1-8"
+              name="form__input_guest-number"
+              id="form__input_guest-number"
+              max="8"
+              min="1"
+              required
+            />
+            <label class="form__label" for="form__input_date-time-local">
+              Date & time*
+            </label>
+            <input
+              type="datetime-local"
+              class="form__input"
+              name="form__input_date-time-local"
+              id="form__input_date-time-local"
+              required
+            />
+            <label class="form__label" for="form__input_email">
+              email@email.com *</label
+            >
+            <input
+              type="text"
+              class="form__input"
+              name="form__input_email"
+              placeholder="email@email.com"
+              id="form__input_email"
+              required
+            />
+            <button class="form__button">Book a table</button>
+            <fieldset class="form__checkbox">
               <input
-                type="text"
-                class="form__input"
-                placeholder="Name surname"
-                name="form__input_name"
-                id="form__input_name"
+                type="checkbox"
+                class="form__checkbox"
+                name="form__input_date-time"
+                id="form__input_checkbox"
                 required
               />
-              <label class="form__label" for="form__input_guest-number">
-                Number of Guests*
-              </label>
-              <input
-                type="number"
-                class="form__input"
-                placeholder="1-8"
-                name="form__input_guest-number"
-                id="form__input_guest-number"
-                max="8"
-                min="1"
-                required
-              />
-              <label class="form__label" for="form__input_date-time-local">
-                Date & time*
-              </label>
-              <input
-                type="datetime-local"
-                class="form__input"
-                name="form__input_date-time-local"
-                id="form__input_date-time-local"
-                required
-              />
-              <label class="form__label" for="form__input_email">
-                email@email.com *</label
+              <label class="form__label" for="form__input_checkbox">
+                I agree with the terms of use</label
               >
-              <input
-                type="text"
-                class="form__input"
-                name="form__input_email"
-                placeholder="email@email.com"
-                id="form__input_email"
-                required
-              />
-              <button class="form__button">Book a table</button>
-              <fieldset class="form__checkbox">
-                <input
-                  type="checkbox"
-                  class="form__checkbox"
-                  name="form__input_date-time"
-                  id="form__input_checkbox"
-                  required
-                />
-                <label class="form__label" for="form__input_checkbox">
-                  I agree with the terms of use</label>
-              </fieldset>
+            </fieldset>
           </form>
         </section>
 
         <section class="about" id="about">
-              <div class="about__title">About the coffee shop</div>
+          <div class="about__title">About the coffee shop</div>
           <div class="about__content">
-              <div class="about__paragraph">
-                Our coffee shop is located in the Practicum Library's hall. It
-                features 6 tables and free WiFi.
-              </div>
-              <div class="about__paragraph">
-                Our main mission is keeping guests cozy and energized.
-              </div>
-              <div class="about__paragraph">
-                Besides that, we try to reduce our environmental impact — so we
-                don't sell single-use cups. But you can buy one of our reusable
-                cups!
-              </div>
+            <div class="about__paragraph">
+              Our coffee shop is located in the Practicum Library's hall. It
+              features 6 tables and free WiFi.
             </div>
-              <div class="about__circle"></div>
-              <div class="about__circle about__circle_animation_blurred"></div>
+            <div class="about__paragraph">
+              Our main mission is keeping guests cozy and energized.
+            </div>
+            <div class="about__paragraph">
+              Besides that, we try to reduce our environmental impact — so we
+              don't sell single-use cups. But you can buy one of our reusable
+              cups!
+            </div>
+          </div>
+          <div class="about__circle"></div>
+          <div class="about__circle about__circle_animation_blurred"></div>
         </section>
       </main>
 
       <footer id="footer" class="footer">
         <div class="footer__content">
-          
-            <img
-              src="./images/practicum_logo.svg"
-              alt="Footer Logo"
-              class="footer__logo"
-            />
-          
+          <img
+            src="./images/practicum_logo.svg"
+            alt="Footer Logo"
+            class="footer__logo"
+          />
+
           <div>
             <h3 class="footer__social-heading">Social Media</h3>
             <ul class="footer__list">
