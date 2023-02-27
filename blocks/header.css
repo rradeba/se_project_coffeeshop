@@ -38,7 +38,7 @@
   font-size: 20px;
   line-height: 30px;
   max-width: 683px;
-  margin-left: 80px;
+  margin: 0 0 0 80px;
 }
 
 .header__image {
@@ -53,8 +53,13 @@
 
 .header__footer{
   position: absolute;
-  bottom: 40px;
-  left: 80px; 
+  bottom: 40px;  
+  left: 80px;
+  right: 80px;
+  display:flex; 
+  align-items: end;
+  justify-content: space-between;
+  max-width: 100%;
 }
 
 .header__paragraph {
@@ -63,15 +68,9 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  list-style: none;
   color: #6f6f6f;
-  margin: 0; 
+  margin:0; 
   padding: 0;
 }
 
-.header__address{
-  position: absolute;
-  right: 80px; 
-  bottom: 40px;
-}
 
