@@ -4,16 +4,11 @@
   
 }
 
-.form__fieldset {
-  display: flex;
-  flex-direction: column;
-}
-
 .form__input {
   box-sizing: border-box;
   height: 60px;
   max-width: 385px;
-  font-family: 'Inter' Arial, Helvetica, sans-serif;
+  font-family: 'Inter', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -27,7 +22,7 @@
   height: 60px;
   max-width: 385px;
   border-radius: 4px;
-  font-family: 'Inter' Arial, Helvetica, sans-serif;
+  font-family: 'Inter', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -47,7 +42,13 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  padding top: 5px;
+}
+
+.form__check{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 0;
 }
 
 .form__checkbox{
@@ -58,5 +59,4 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border: 0; 
 }

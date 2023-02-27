@@ -15,7 +15,6 @@
   font-weight: 500;
   font-size: 44px;
   line-height: 52px;
-  margin-bottom: 24px;
   max-width: 780px;
   width: 100%;
   padding-top: 100px;
@@ -24,7 +23,7 @@
 }
 
 .menu__subtitle {
-  font-family: 'Noto Serif' Arial, Helvetica, sans-serif;
+  font-family: 'Noto Serif', 'Times New Roman',serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;

@@ -1,35 +1,36 @@
-.card{
-    list-style-type: none;
-    max-width: 600px;
-    width: 50%;
+.card {
+  list-style-type: none;
+  max-width: 600px;
+  width: 40%;
 }
-    
-.card__title{
-    text-align:left; 
-    vertical-align: top;
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 30px;
-    margin: 0 0 32px 0; 
+
+.card__title {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0 0 32px 0;
 }
-    
-    .card__list-item{
-        font-family: 'Noto Serif', Arial, Helvetica, sans-serif;
-        margin: 0 0 16px 0;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 20px;
-        display: flex; 
-    }
-    .card__list-item:last-child {
-       margin:0; 
-    } 
-    .card__list-divider{
-        border-bottom: 1px solid #ffffff;
-    
-      flex: auto;
-      
-    }
+.card__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.card__list-item {
+  font-family: "Noto Serif", "Times New Roman", serif;
+  margin: 0 0 16px 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+}
+.card__list-item:last-child {
+  margin: 0;
+}
+.card__list-divider {
+  border-bottom: 1px solid #ffffff;
+  flex: auto;
+}
