@@ -6,6 +6,7 @@
 
 .form__input {
   box-sizing: border-box;
+  border-radius: 4px;
   height: 60px;
   max-width: 385px;
   font-family: 'Inter', Arial, sans-serif;
